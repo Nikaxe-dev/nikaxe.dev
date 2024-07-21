@@ -1,0 +1,23 @@
+<head>
+
+	<title>Basic clicker game</title>
+
+</head>
+
+<body style="background-color:grey;">
+
+<img src="clicker.png" height="500" width="500" onclick="addtoscore(1)">
+<p>Score: <span id="score"></p>
+
+<script>
+var score = 0
+
+function addtoscore(amount)
+{
+	score += amount
+	document.getElementById("score").innerHTML = score;
+}
+
+</script>
+
+</body>
