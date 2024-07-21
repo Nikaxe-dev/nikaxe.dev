@@ -1,0 +1,21 @@
+* {
+    font-family: fantasy
+}
+
+body {
+  background-color: rgb(16,16,16);
+}
+h2 {
+  color: rgb(88,164,222);
+}
+p {
+  color: rgb(175,175,175);
+}
+
+* {
+    color: white
+}
+
+* {
+    text-align: center
+}
