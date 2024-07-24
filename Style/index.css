@@ -1,0 +1,240 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+body {
+  background-color: rgb(16,16,16);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+head::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  color: white;
+}
+
+@keyframes rotate-back-fourth-20deg {
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header {
+    color: rgb(88,164,222);
+    font-family: Rubik Pixels;
+    font-size: 50px
+}
+
+a {
+  transition: font-size .5s ease-in-out;
+}
+
+a:not(.header):hover {
+  font-size: 32px;
+}
+
+p {
+  transition: font-size .5s ease-in-out;
+}
+
+p:not(.animate-hover-none):hover {
+  font-size: 26px;
+}
+
+p {
+  color: rgb(175,175,175);
+}
+
+.prord a {
+    color:rgb(41, 240, 183);
+}
+
+.procat a {
+    color:rgb(237, 117, 226);
+}
+
+.divider1 {
+  color: rgb(159, 255, 226);
+}
+
+.container {
+  width: 375px;
+  height: 450px;
+  background: rgb(20, 20, 20);
+  margin: 20px;
+  border-radius: 35px;
+  box-shadow: 4px 4px 30px rgba(26, 28, 34, 0.514);
+  border: 5px solid rgb(40, 48, 65);
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.page-list {
+  margin: 10px;
+}
+
+.page-list .page {
+  padding: 3px;
+}
+
+.page a {
+  transition: font-size .5s ease-in-out;
+  font-size: 30px;
+}
+
+.page a:hover {
+  font-size: 35px;
+}
+
+.container form input {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 0px;
+}
+
+input {
+  background: rgb(25, 25, 25);
+  color: white;
+  border-color: black;
+  border-radius: 20px;
+  outline: none;
+}
+
+a {
+    color: lightblue;
+    text-decoration:none;
+}
+
+#quote {
+    color: rgb(136,247,190);
+    font-family: Courier New;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 23px;
+}
+
+a {
+    font-size: 28px
+}
+
+button {
+  background-color: black;
+  border-radius: 7px;
+}
+
+audio {
+  border-radius: 20px;
+}
+
+* {
+    color: white;
+    text-align: center;
+    font-family:monospace
+}
