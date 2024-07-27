@@ -79,6 +79,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 head::-webkit-scrollbar {
   display: none;
 }
@@ -143,16 +144,25 @@ p {
   color: rgb(159, 255, 226);
 }
 
+.project-card {
+  width: 350px;
+  height: 75px;
+
+  background-color: rgb(10,10,10);
+  border-radius: 10px;
+}
+
 .container {
   width: 375px;
   height: 450px;
-  background: rgb(20, 20, 20);
+  background: rgb(10, 11, 15);
   margin: 20px;
   border-radius: 35px;
   box-shadow: 4px 4px 30px rgba(26, 28, 34, 0.514);
   border: 5px solid rgb(40, 48, 65);
   padding: 20px;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .container::-webkit-scrollbar {
@@ -165,21 +175,37 @@ p {
 
 .page-list .page {
   padding: 3px;
+  background-color: rgba(10, 10, 10, 0.87);
+  margin: 10px 0px;
+  border-radius: 20px;
 }
 
 .page a {
   transition: font-size .5s ease-in-out;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .page a:hover {
-  font-size: 35px;
+  font-size: 27px;
 }
 
 .container form input {
   font-size: 16px;
   font-weight: 600;
   padding: 2px 0px;
+}
+
+.container form {
+  background-color:rgb(8,8,8);
+  border-radius: 10px;
+  height: 40px;
+  transform: translateY(-17px);
+}
+
+.container h4 {
+  background-color:rgb(8,8,8);
+  border-radius: 10px;
+  height: 55px;
 }
 
 input {
@@ -236,5 +262,5 @@ audio {
 * {
     color: white;
     text-align: center;
-    font-family:monospace
+    font-family:monospace;
 }
