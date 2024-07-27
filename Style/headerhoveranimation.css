@@ -1,0 +1,8 @@
+.header {
+    transition: font-size 1.5s ease-in-out, transform 2s ease-in-out;
+}
+
+.header:hover {
+  font-size: 65px;
+  transform: rotate(360deg);
+}
