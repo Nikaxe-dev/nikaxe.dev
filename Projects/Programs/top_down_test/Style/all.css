@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(8,8,8);
+    overflow: hidden;
+}
+
+img {
+    pointer-events: none;
+}
+
+.gui {
+    text-align: center;
+    z-index: 1001;
+}
+
+#fps {
+    text-align: left;
+}
+
+* {
+    color: white;
+    user-select: none;
+    font-family: monospace;
+    font-size: 20px;
+}
