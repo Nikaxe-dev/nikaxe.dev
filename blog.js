@@ -58,7 +58,7 @@ async function script() {
                 }*/
 
                 var line = document.createElement("p")
-                line.style.margin = "0px"
+                line.style = "margin: 0px; font-size: 20px;"
 
                 if (data[0] === "") {
                     if (data[1] === "link") {
@@ -84,6 +84,8 @@ async function script() {
                 } else {
                     line.textContent = data
                 }
+
+                line.className = "blogtext build-opacity-spawn"
 
                 if (typeof style === "object") {
                     for (styli = 0; styli < Object.keys(style).length; styli++) {
