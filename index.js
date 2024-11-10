@@ -24,7 +24,7 @@ if(window.location.pathname == "/" || window.location.pathname == "/home.html") 
 
 function metatag(name, value) {
     const tag = document.createElement("meta")
-    tag.property = name
+    tag.name = name
     tag.content = value
     document.head.appendChild(tag)
 }
