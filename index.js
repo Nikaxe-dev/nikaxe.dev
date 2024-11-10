@@ -20,6 +20,18 @@ if(window.location.pathname == "/" || window.location.pathname == "/home.html") 
     title.textContent = `nikaxe.is-a.dev - ${window.location.pathname.slice(1, window.location.pathname.length - 5)}`
 }
 
+//meta tags
+
+function metatag(name, value) {
+    const tag = document.createElement("meta")
+    tag.property = name
+    tag.content = value
+    document.head.appendChild(tag)
+}
+
+metatag("og:title", title.textContent)
+metatag("og:description", "Website for me to share my projects, art, and more.")
+
 //icon
 
 const icon = document.createElement("link")
@@ -43,9 +55,9 @@ function onloadednavigation() {
         }
     })
 
-    document.onscroll = function() {
-        navigation.style.top = window.scrollY + 0 + "px"
-    }
+    // document.onscroll = function() {
+    //     navigation.style.top = window.scrollY + "px"
+    // }
 }
 
 const xml = new XMLHttpRequest
@@ -78,3 +90,12 @@ addEventListener("load", function() {
         document.body.appendChild(back)
     }
 })
+
+// fetch('https://api.github.com/repos/Nikaxe-Dev/nikaxe.dev/contents/./')
+//   .then(response => response.json())
+//   .then(data => {
+//     data.forEach(item => {
+//         console.log(item.type, item.name); // Logs each file's name
+//     });
+//   })
+//   .catch(error => console.error('Error fetching file list:', error));
