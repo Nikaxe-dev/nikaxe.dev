@@ -47,9 +47,9 @@
                         "$text$Written - 9/11/2024.${}",
                         "$text$After like 3 weeks or something, I've updated the website again. This time being a huge one, with the entire website being redisigned. It is alot more compact now, with it not having that giant logo. I still might have to find a way to include the quote though, as that was a bit of a staple of this website in the beginning. I'm fine with how it is right now though, or heck, even happy! It looks so much better than it used to. And after quite a bit of learning, alot better programmed. It doesnt use that annoying page system I was using before, which is SO much better. This also took much less time to make than it did before too.${}",
                         "$subheader$Before:${}",
-                        "$image$./documents/images/websiteV20.png${\"size\":50}",
+                        "$image$./documents/images/websiteV20.png${\"width\":720, \"height\":450}",
                         "$subheader$After:${}",
-                        "$image$./documents/images/websiteV30.png${\"size\":50}",
+                        "$image$./documents/images/websiteV30.png${\"width\":720, \"height\":450}",
                         "$new$${\"amount\":1}",
                         "$text$Also during the making of this blogpost I had to add some new btxt tags. So that's nice. The new tags are \"image\" and \"subheader\"${}"
                     ]
