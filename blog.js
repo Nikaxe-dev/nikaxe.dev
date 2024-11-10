@@ -137,8 +137,8 @@ async function script() {
                         line.style.borderRadius = "20px"
                         line.style.borderColor = "grey"
                         line.style.borderStyle = "solid"
-                        line.width *= (properties.size / 100)
-                        line.height *= (properties.size / 100)
+                        line.width = properties.width
+                        line.height = properties.height
                         console.log(properties.size)
                     } else if (data[1] === "subheader") {
                         line = document.createElement("h2")
