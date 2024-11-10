@@ -49,6 +49,9 @@ async function script() {
         postdiv.id = "blog-post"
         postdiv.style.margin = "50px"
         page.appendChild(postdiv)
+
+        document.getElementById("search-page").remove()
+        document.getElementById("search-page-icon").remove()
     } else {
         var postlinksheader = document.createElement("h1")
         postlinksheader.textContent = "Posts:"
@@ -171,6 +174,23 @@ async function script() {
     if(!post) {
         blog.list.forEach(function(data) {
             createpostlink(data.name)
+
+            document.getElementById("search-page").onkeyup = function(event) {
+                const search = document.getElementById("search-page")
+                const items = document.querySelectorAll("#page p")
+                const searchquery = search.value
+                
+                items.forEach(function(item, index, parent) {
+                    const tags = findblogdatabyname(item.textContent).tags
+                    const compare = item.textContent + " " + tags
+
+                    if(compare.toLowerCase().indexOf(searchquery.toLowerCase()) > -1) {
+                        item.style.display = ""
+                    } else {
+                        item.style.display = "none"
+                    }
+                })
+            }
         })
     } else {
         createpostpage(findblogdatabyname(post))
