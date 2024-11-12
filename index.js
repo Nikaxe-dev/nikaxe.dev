@@ -23,10 +23,11 @@ if(window.location.pathname == "/" || window.location.pathname == "/home.html") 
 //meta tags
 
 function metatag(name, value) {
-    const tag = document.createElement("meta")
+    var tag = document.querySelector(`#og${name.slice(3, name.length)}`)
+    console.log(tag, name, value, `og${name.slice(3, name.length)}`)
+    if(!tag) {tag = document.createElement("meta"); document.head.appendChild(tag)}
     tag.name = name
     tag.content = value
-    document.head.appendChild(tag)
 }
 
 metatag("og:title", title.textContent)
@@ -55,9 +56,9 @@ function onloadednavigation() {
         }
     })
 
-    // document.onscroll = function() {
-    //     navigation.style.top = window.scrollY + "px"
-    // }
+    document.onscroll = function() {
+        navigation.style.top = window.scrollY + "px"
+    }
 }
 
 const xml = new XMLHttpRequest

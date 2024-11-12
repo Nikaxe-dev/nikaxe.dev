@@ -193,7 +193,12 @@ async function script() {
             }
         })
     } else {
-        createpostpage(findblogdatabyname(post))
+        const postdata = findblogdatabyname(post)
+
+        createpostpage(postdata)
+
+        metatag("og:title", postdata.name)
+        metatag("og:description", postdata.description)
     }
 }
 
