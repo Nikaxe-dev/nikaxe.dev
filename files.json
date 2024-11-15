@@ -1,0 +1,102 @@
+{
+    "blog.html": {
+        "type": "file",
+        "path": "blog.html"
+    },
+    "blog.js": {
+        "type": "file",
+        "path": "blog.js"
+    },
+    "blog.json": {
+        "type": "file",
+        "path": "blog.json"
+    },
+    "CNAME": {
+        "type": "file",
+        "path": "CNAME"
+    },
+    "data.js": {
+        "type": "file",
+        "path": "data.js"
+    },
+    "documents": {
+        "type": "directory",
+        "path": "documents",
+        "images": {
+            "type": "directory",
+            "path": "documents/images",
+            "6614689.png": {
+                "type": "file",
+                "path": "documents/images/6614689.png"
+            },
+            "websiteV20.png": {
+                "type": "file",
+                "path": "documents/images/websiteV20.png"
+            },
+            "websiteV30.png": {
+                "type": "file",
+                "path": "documents/images/websiteV30.png"
+            }
+        },
+        "projects": {
+            "type": "directory",
+            "path": "documents/projects",
+            "files.json": {
+                "type": "file",
+                "path": "documents/projects/files.json"
+            },
+            "Website Viewer": {
+                "type": "directory",
+                "path": "documents/projects/Website Viewer",
+                "fileviewer.js": {
+                    "type": "file",
+                    "path": "documents/projects/Website Viewer/fileviewer.js"
+                },
+                "index.html": {
+                    "type": "file",
+                    "path": "documents/projects/Website Viewer/index.html"
+                }
+            }
+        }
+    },
+    "favicon.ico": {
+        "type": "file",
+        "path": "favicon.ico"
+    },
+    "files.json": {
+        "type": "file",
+        "path": "files.json"
+    },
+    "filesconverter.js": {
+        "type": "file",
+        "path": "filesconverter.js"
+    },
+    "fun.html": {
+        "type": "file",
+        "path": "fun.html"
+    },
+    "fun.js": {
+        "type": "file",
+        "path": "fun.js"
+    },
+    "home.html": {
+        "type": "file",
+        "path": "home.html"
+    },
+    "index.css": {
+        "type": "file",
+        "path": "index.css"
+    },
+    "index.html": {
+        "type": "file",
+        "path": "index.html"
+    },
+    "index.js": {
+        "type": "file",
+        "path": "index.js"
+    },
+    "navigation.html": {
+        "type": "file",
+        "path": "navigation.html"
+    }
+}

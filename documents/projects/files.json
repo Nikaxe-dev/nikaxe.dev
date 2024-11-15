@@ -1,0 +1,5 @@
+{
+    "files.json": {"type": "file", "purpose": "filemap"},
+
+    "Website Viewer": {"type": "directory", "purpose": "project", "description": "View the files of this website!", "thumbnail": "./documents/images/websiteV30.png", "index.html": {"type": "file", "purpose": "index"}}
+}
