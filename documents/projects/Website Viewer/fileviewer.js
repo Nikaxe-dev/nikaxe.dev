@@ -34,6 +34,8 @@ async function script() {
                 const link = document.createElement("h4")
                 link.className = "link underline-on-hover"
                 link.textContent = `${item.type}: ${name}`
+
+                console.log(item.path)
                 
                 if(item.type == "file") {
                     link.onclick = function() {

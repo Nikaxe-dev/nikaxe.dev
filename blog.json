@@ -19,10 +19,33 @@
                         "$text$Written - 9/11/2024.${}",
                         "$subheader$Helexo${}",
                         "$text$Helexo is a big, adventure game built on Roblox (with my friend helping with the building a bit) inspired by titles like Hohokum, ect. In the game you're gonna explore a map with things to do eveywhere that give you items. Those items can then be spawned to help you achieve goals. Your main why of getting around will be by flying on an object using the games grabbing system.${}",
-                        "$subheader$Untitled Framework For Making Games${}",
+                        "$subheader$Instance2D${}",
                         "$text$A framework for making games programmed with JavaScript using the html canvas api. My goal is for it to feel like programming in roblox, just 2d and a lot more limited. Im aiming for it to just be a little framework that I will use for small minigames from time to time. It uses a tree system just like alot of Game Engines do. Could turn this one into a Game Engine, but I'm still brainstorming how I would begin to do that. So I most likely wont.${}",
                         "$subheader$This version of the website (3.0)${}",
                         "$text$Not much to say about this one, it's just the very version of the website you're looking at right now. It's programmed alot better, and doesnt use that annoying page system I made for no reason. It also has a way better layout, with all of the uneeded stuff clogging up the page neatly put into a navigation bar. Took much less time than I thought, and was very worth it in the long run.${}"
+                    ]
+                }
+            }
+        },
+
+        {
+            "name": "Instance2d",
+            "description": "A framework for making games in javascript.",
+            "tags": "Framework Javascript Game Engine Instance2d 2d Instance",
+
+            "content": {
+                "type": "enter",
+                "language": "btxt",
+                "src": {
+                    "data": {
+                        "attributes": {
+                            "style": "index.css"
+                        }
+                    },
+
+                    "content": [
+                        "$text$Redirecting...${}",
+                        "$redirect$/Instance2d${}"
                     ]
                 }
             }
@@ -47,9 +70,9 @@
                         "$text$Written - 9/11/2024.${}",
                         "$text$After like 3 weeks or something, I've updated the website again. This time being a huge one, with the entire website being redisigned. It is alot more compact now, with it not having that giant logo. I still might have to find a way to include the quote though, as that was a bit of a staple of this website in the beginning. I'm fine with how it is right now though, or heck, even happy! It looks so much better than it used to. And after quite a bit of learning, alot better programmed. It doesnt use that annoying page system I was using before, which is SO much better. This also took much less time to make than it did before too.${}",
                         "$subheader$Before:${}",
-                        "$image$./documents/images/websiteV20.png${\"width\":720, \"height\":450}",
+                        "$image$./documents/images/Misc/websiteV20.png${\"width\":720, \"height\":450}",
                         "$subheader$After:${}",
-                        "$image$./documents/images/websiteV30.png${\"width\":720, \"height\":450}",
+                        "$image$./documents/images/Misc/websiteV30.png${\"width\":720, \"height\":450}",
                         "$new$${\"amount\":1}",
                         "$text$Also during the making of this blogpost I had to add some new btxt tags. So that's nice. The new tags are \"image\" and \"subheader\"${}"
                     ]

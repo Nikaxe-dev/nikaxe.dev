@@ -15,13 +15,17 @@ document.head.appendChild(fonts)
 
 //title
 
-const title = document.createElement("title")
-document.head.appendChild(title)
+var title = document.querySelector("title")
 
-if(window.location.pathname == "/" || window.location.pathname == "/home.html") {
-    title.textContent = "nikaxe.is-a.dev - home"
-} else {
-    title.textContent = `nikaxe.is-a.dev - ${window.location.pathname.slice(1, window.location.pathname.length - 5)}`
+if(!title) {
+    title = document.createElement("title")
+    document.head.appendChild(title)
+
+    if(window.location.pathname == "/" || window.location.pathname == "/home.html") {
+        title.textContent = "nikaxe.is-a.dev - home"
+    } else {
+        title.textContent = `nikaxe.is-a.dev - ${window.location.pathname.slice(1, window.location.pathname.length - 5)}`
+    }
 }
 
 //meta tags
@@ -39,10 +43,14 @@ metatag("og:description", "Website for me to share my projects, art, and more.")
 
 //icon
 
-const icon = document.createElement("link")
-document.head.appendChild(icon)
-icon.rel = "icon"
-icon.href = "/favicon.ico"
+var icon = document.getElementById("icon")
+
+if(!icon) {
+    icon = document.createElement("link")
+    document.head.appendChild(icon)
+    icon.rel = "icon"
+    icon.href = "/favicon.ico"
+}
 
 //navigation
 

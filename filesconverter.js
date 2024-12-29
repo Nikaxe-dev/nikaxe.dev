@@ -9,15 +9,19 @@ function getDirectoryStructure(dirPath, relativePath = '') {
         const entryPath = path.join(dirPath, entry.name);
         const entryRelativePath = path.join(relativePath, entry.name);
 
+        if(entryRelativePath == ".git") {
+            continue
+        }
+
         if (entry.isFile()) {
             structure[entry.name] = {
                 type: "file",
-                relativePath: entryRelativePath.replace(/\\/g, '/') // Use forward slashes for consistency
+                path: entryRelativePath.replace(/\\/g, '/') // Use forward slashes for consistency
             };
         } else if (entry.isDirectory()) {
             structure[entry.name] = {
                 type: "directory",
-                relativePath: entryRelativePath.replace(/\\/g, '/'),
+                path: entryRelativePath.replace(/\\/g, '/'),
                 ...getDirectoryStructure(entryPath, entryRelativePath)
             };
         }

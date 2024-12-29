@@ -21,6 +21,10 @@ async function script() {
 
             const thumbnail = projectcard.getElementsByClassName("thumbnail")[0]
             thumbnail.src = value.thumbnail
+            
+            if(value.thumbnailwidth) {
+                thumbnail.style.width = value.thumbnailwidth
+            }
 
             projectcard.onclick = function() {
                 window.location.href = `./documents/projects/${key}`

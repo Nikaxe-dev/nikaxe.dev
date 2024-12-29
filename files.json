@@ -25,17 +25,37 @@
         "images": {
             "type": "directory",
             "path": "documents/images",
-            "6614689.png": {
-                "type": "file",
-                "path": "documents/images/6614689.png"
+            "Instance2d": {
+                "type": "directory",
+                "path": "documents/images/Instance2d",
+                "Favicon.svg": {
+                    "type": "file",
+                    "path": "documents/images/Instance2d/Favicon.svg"
+                },
+                "Icon.svg": {
+                    "type": "file",
+                    "path": "documents/images/Instance2d/Icon.svg"
+                },
+                "Main Services.svg": {
+                    "type": "file",
+                    "path": "documents/images/Instance2d/Main Services.svg"
+                },
+                "Parent Child Relationship.svg": {
+                    "type": "file",
+                    "path": "documents/images/Instance2d/Parent Child Relationship.svg"
+                }
             },
-            "websiteV20.png": {
-                "type": "file",
-                "path": "documents/images/websiteV20.png"
-            },
-            "websiteV30.png": {
-                "type": "file",
-                "path": "documents/images/websiteV30.png"
+            "Misc": {
+                "type": "directory",
+                "path": "documents/images/Misc",
+                "websiteV20.png": {
+                    "type": "file",
+                    "path": "documents/images/Misc/websiteV20.png"
+                },
+                "websiteV30.png": {
+                    "type": "file",
+                    "path": "documents/images/Misc/websiteV30.png"
+                }
             }
         },
         "projects": {
@@ -44,6 +64,14 @@
             "files.json": {
                 "type": "file",
                 "path": "documents/projects/files.json"
+            },
+            "Instance2d": {
+                "type": "directory",
+                "path": "documents/projects/Instance2d",
+                "index.html": {
+                    "type": "file",
+                    "path": "documents/projects/Instance2d/index.html"
+                }
             },
             "Website Viewer": {
                 "type": "directory",
@@ -94,6 +122,14 @@
     "index.js": {
         "type": "file",
         "path": "index.js"
+    },
+    "Instance2d": {
+        "type": "directory",
+        "path": "Instance2d",
+        "index.html": {
+            "type": "file",
+            "path": "Instance2d/index.html"
+        }
     },
     "navigation.html": {
         "type": "file",

@@ -142,6 +142,11 @@ async function script() {
                     } else if (data[1] === "subheader") {
                         line = document.createElement("h2")
                         line.textContent = data[2]
+                    } else if (data[1] === "redirect") {
+                        line = document.createElement("p")
+                        line.textContent = ""
+                        console.log(data[2])
+                        window.location.href = data[2]
                     }
 
                 } else {
