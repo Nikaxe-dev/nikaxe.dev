@@ -25,7 +25,7 @@ var blog = {}
 
 async function script() {
     async function getall() {
-        blog = await getdata("blog")
+        blog = await getdata("blog/blog")
     }
 
     await getall()
