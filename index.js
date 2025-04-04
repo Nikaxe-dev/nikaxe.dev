@@ -90,7 +90,7 @@ xml.send()
 addEventListener("load", function() {
     //back
 
-    if(!(window.location.pathname == "/" || window.location.pathname == "/home.html")) {
+    if(!(window.location.pathname == "/" || window.location.pathname == "/home/" || window.location.pathname == "/home")) {
         const back = document.createElement("p")
         back.textContent = "Back ←←←"
         back.style.margin = "50px"
