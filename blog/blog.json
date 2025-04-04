@@ -3,6 +3,7 @@
         {
             "name": "Update 3.2! - 4/04/2025",
             "description": "Talking about the new update to the website.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "Update Deprecation BTXT",
 
             "content": {
@@ -14,6 +15,7 @@
         {
             "name": "Death to BTXT - 4/04/2025",
             "description": "Talking about the deprecation of BTXT from my blog system.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "Update Deprecation BTXT",
 
             "content": {
@@ -23,8 +25,9 @@
         },
 
         {
-            "name": "What I'm working on: Start of November, 2024 - 9/11/2024",
-            "description": "A much needed update on what I have been working on. Helexo, an open world adventure game, An untitled framework, for making games, and this version of the website, which includes a much needed redisign of the entire website.",
+            "name": "What im working on, 9/11/2024",
+            "description": "A much needed update on what I have been working on. Helexo, an open world adventure game, An untitled framework for making games, and v3.0 of the website, a much needed redisign.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "Helexo Website Untitled Framework Update",
 
             "content": {
@@ -53,6 +56,7 @@
         {
             "name": "Instance2d (Redirect) - 9/11/2024",
             "description": "A framework for making games in javascript.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "Framework Javascript Game Engine Instance2d 2d Instance",
 
             "content": {
@@ -75,7 +79,8 @@
 
         {
             "name": "New website design! (V3.0) - 9/11/2024",
-            "description": "After like 3 weeks or something, I've updated the website again. This time being a huge one, with the entire website being redisigned. It is alot more compact now, with it not having that giant logo. I still might have to find a way to include the quote though, as that was a bit of a staple of this website in the beginning. I'm fine with how it is right now though, or heck, even happy! It looks so much better than it used to. And after quite a bit of learning, alot better programmed. It doesnt use that annoying page system I was using before, which is SO much better. This also took much less time to make than it did before too.",
+            "description": "After like 3 weeks or something, theres a new redisign to the website.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "Website Update Design",
 
             "content": {
@@ -92,9 +97,9 @@
                         "$text$Written - 9/11/2024.${}",
                         "$text$After like 3 weeks or something, I've updated the website again. This time being a huge one, with the entire website being redisigned. It is alot more compact now, with it not having that giant logo. I still might have to find a way to include the quote though, as that was a bit of a staple of this website in the beginning. I'm fine with how it is right now though, or heck, even happy! It looks so much better than it used to. And after quite a bit of learning, alot better programmed. It doesnt use that annoying page system I was using before, which is SO much better. This also took much less time to make than it did before too.${}",
                         "$subheader$Before:${}",
-                        "$image$./documents/images/Misc/websiteV20.png${\"width\":720, \"height\":450}",
+                        "$image$/documents/images/Misc/websiteV20.png${\"width\":720, \"height\":450}",
                         "$subheader$After:${}",
-                        "$image$./documents/images/Misc/websiteV30.png${\"width\":720, \"height\":450}",
+                        "$image$/documents/images/Misc/websiteV30.png${\"width\":720, \"height\":450}",
                         "$new$${\"amount\":1}",
                         "$text$Also during the making of this blogpost I had to add some new btxt tags. So that's nice. The new tags are \"image\" and \"subheader\"${}"
                     ]
@@ -103,8 +108,9 @@
         },
 
         {
-            "name": "BTXT formatting and the new blog page - 17/10/2024",
+            "name": "BTXT and the blog - 17/10/2024",
             "description": "Another update to the website, this time adding a blog page written in a scuffed format I call BTXT.",
+            "thumbnail": "/documents/images/Misc/websiteV30.png",
             "tags": "BTXT update formatting blog page new",
 
             "content": {

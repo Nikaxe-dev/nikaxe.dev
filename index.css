@@ -316,6 +316,16 @@ code {
     margin: 50px 0px 600px 0px;
 } */
 
+/* Div features */
+
+.scale-on-hover {
+    transition: all .15s ease-in-out;
+}
+
+.scale-on-hover:hover {
+    transform: scale(1.05);
+}
+
 /* Text features */
 
 .no-underline {
@@ -336,6 +346,38 @@ code {
 
 .quote {
     color: #90eebf;
+}
+
+/* Blog posts */
+
+.blog-post {
+    margin: 75px auto;
+    width: 750px;
+    height: 200px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.blog-post .card-title {
+    text-align: left;
+    width: 75%;
+    margin: 20px 25px;
+    font-size: 20px;
+}
+
+.blog-post .card-description {
+    text-align: left;
+    width: 75%;
+    margin: 20px 25px;
+    font-size: 15px;
+}
+
+.blog-post .card-thumbnail {
+    float: right;
+    margin: -110px 100px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
 }
 
 /* Default text and color */

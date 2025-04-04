@@ -64,13 +64,24 @@ async function script() {
     }
 
     function createpostlink(name) {
+        const post = findblogdatabyname(name)
+        
+        const div = document.createElement("div")
+        div.className = "blog-post scale-on-hover"
+
         const link = document.createElement("p")
-        link.className = "link underline-on-hover"
+        link.className = "underline-on-hover card-title"
         link.textContent = name
 
-        link.onclick = function() {
-            const post = findblogdatabyname(name)
+        const description = document.createElement("p")
+        description.className = "card-description"
+        description.innerHTML = post.description
 
+        // const thumbnail = document.createElement("img")
+        // thumbnail.className = "card-thumbnail"
+        // thumbnail.src = post.thumbnail
+
+        div.onclick = function() {
             if (post.content.type === "link") {
                 window.location.href = post.content.src
                 return
@@ -79,7 +90,10 @@ async function script() {
             window.location.search = "?post=" + name
         }
 
-        postlinks.appendChild(link)
+        div.appendChild(link)
+        div.appendChild(description)
+        // div.appendChild(thumbnail)
+        postlinks.appendChild(div)
     }
 
     function createpostpage(post) {
@@ -192,17 +206,18 @@ async function script() {
 
             document.getElementById("search-page").onkeyup = function(event) {
                 const search = document.getElementById("search-page")
-                const items = document.querySelectorAll("#page p")
+                const items = document.querySelectorAll(".blog-post")
                 const searchquery = search.value
                 
-                items.forEach(function(item, index, parent) {
+                items.forEach(function(blogpost, index, parent) {
+                    const item = blogpost.getElementsByClassName("card-title")[0]
                     const tags = findblogdatabyname(item.textContent).tags
                     const compare = item.textContent + " " + tags
 
                     if(compare.toLowerCase().indexOf(searchquery.toLowerCase()) > -1) {
-                        item.style.display = ""
+                        blogpost.style.display = ""
                     } else {
-                        item.style.display = "none"
+                        blogpost.style.display = "none"
                     }
                 })
             }
