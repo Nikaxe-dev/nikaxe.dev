@@ -63,7 +63,7 @@ function onloadednavigation() {
     const elements = document.querySelectorAll("#navigation .links ul li h3")
     
     elements.forEach(function(value, key, parent) {
-        if(window.location.pathname == `/${value.textContent.toLowerCase()}.html`) {
+        if(window.location.pathname == `/${value.textContent.toLowerCase()}/`) {
             value.className = "selected"
         }
     })

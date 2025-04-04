@@ -316,6 +316,16 @@ code {
     margin: 50px 0px 600px 0px;
 } */
 
+/* Text features */
+
+.no-underline {
+    text-decoration: none;
+}
+
+.blue-text {
+    color: #00b6ee;
+}
+
 /* Default text and color */
 
 * {
