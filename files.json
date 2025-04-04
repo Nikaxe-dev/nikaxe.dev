@@ -1,15 +1,47 @@
 {
-    "blog.html": {
-        "type": "file",
-        "path": "blog.html"
+    "arg-feedback": {
+        "type": "directory",
+        "path": "arg-feedback",
+        "index.html": {
+            "type": "file",
+            "path": "arg-feedback/index.html"
+        },
+        "quote.js": {
+            "type": "file",
+            "path": "arg-feedback/quote.js"
+        }
     },
-    "blog.js": {
-        "type": "file",
-        "path": "blog.js"
-    },
-    "blog.json": {
-        "type": "file",
-        "path": "blog.json"
+    "blog": {
+        "type": "directory",
+        "path": "blog",
+        "blog.js": {
+            "type": "file",
+            "path": "blog/blog.js"
+        },
+        "blog.json": {
+            "type": "file",
+            "path": "blog/blog.json"
+        },
+        "death-to-btxt": {
+            "type": "directory",
+            "path": "blog/death-to-btxt",
+            "index.html": {
+                "type": "file",
+                "path": "blog/death-to-btxt/index.html"
+            }
+        },
+        "index.html": {
+            "type": "file",
+            "path": "blog/index.html"
+        },
+        "update-3.2": {
+            "type": "directory",
+            "path": "blog/update-3.2",
+            "index.html": {
+                "type": "file",
+                "path": "blog/update-3.2/index.html"
+            }
+        }
     },
     "CNAME": {
         "type": "file",
@@ -48,6 +80,10 @@
             "Misc": {
                 "type": "directory",
                 "path": "documents/images/Misc",
+                "paper-icon.png": {
+                    "type": "file",
+                    "path": "documents/images/Misc/paper-icon.png"
+                },
                 "websiteV20.png": {
                     "type": "file",
                     "path": "documents/images/Misc/websiteV20.png"
@@ -103,13 +139,17 @@
         "type": "file",
         "path": "fun.html"
     },
-    "fun.js": {
-        "type": "file",
-        "path": "fun.js"
-    },
-    "home.html": {
-        "type": "file",
-        "path": "home.html"
+    "home": {
+        "type": "directory",
+        "path": "home",
+        "index.html": {
+            "type": "file",
+            "path": "home/index.html"
+        },
+        "quote.js": {
+            "type": "file",
+            "path": "home/quote.js"
+        }
     },
     "index.css": {
         "type": "file",
@@ -123,16 +163,20 @@
         "type": "file",
         "path": "index.js"
     },
-    "Instance2d": {
-        "type": "directory",
-        "path": "Instance2d",
-        "index.html": {
-            "type": "file",
-            "path": "Instance2d/index.html"
-        }
-    },
     "navigation.html": {
         "type": "file",
         "path": "navigation.html"
+    },
+    "projects": {
+        "type": "directory",
+        "path": "projects",
+        "index.html": {
+            "type": "file",
+            "path": "projects/index.html"
+        },
+        "projects.js": {
+            "type": "file",
+            "path": "projects/projects.js"
+        }
     }
 }
