@@ -322,11 +322,19 @@ code {
     text-decoration: none;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .blue-text {
     color: #00b6ee;
 }
 
 #quote {
+    color: #90eebf;
+}
+
+.quote {
     color: #90eebf;
 }
 
