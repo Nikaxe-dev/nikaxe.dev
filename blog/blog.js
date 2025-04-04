@@ -25,7 +25,7 @@ var blog = {}
 
 async function script() {
     async function getall() {
-        blog = await getdata("blog")
+        blog = await getdata("blog/blog")
     }
 
     await getall()
@@ -69,6 +69,13 @@ async function script() {
         link.textContent = name
 
         link.onclick = function() {
+            const post = findblogdatabyname(name)
+
+            if (post.content.type === "link") {
+                window.location.href = post.content.src
+                return
+            }
+
             window.location.search = "?post=" + name
         }
 
@@ -80,6 +87,10 @@ async function script() {
         header.style.textDecorationLine = "underline"
         header.textContent = post.name
         postdiv.appendChild(header)
+
+        if (post.content.type === "link") {
+            window.location.href = post.content.src
+        }
 
         if (post.content.type === "enter" && post.content.language === "html") { postdiv.innerHTML = post.content.src }
 

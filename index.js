@@ -63,7 +63,7 @@ function onloadednavigation() {
     const elements = document.querySelectorAll("#navigation .links ul li h3")
     
     elements.forEach(function(value, key, parent) {
-        if(window.location.pathname == `/${value.textContent.toLowerCase()}.html`) {
+        if(window.location.pathname == `/${value.textContent.toLowerCase()}/`) {
             value.className = "selected"
         }
     })
@@ -90,7 +90,7 @@ xml.send()
 addEventListener("load", function() {
     //back
 
-    if(!(window.location.pathname == "/" || window.location.pathname == "/home.html")) {
+    if(!(window.location.pathname == "/" || window.location.pathname == "/home/" || window.location.pathname == "/home")) {
         const back = document.createElement("p")
         back.textContent = "Back ←←←"
         back.style.margin = "50px"

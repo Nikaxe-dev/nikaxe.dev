@@ -316,6 +316,28 @@ code {
     margin: 50px 0px 600px 0px;
 } */
 
+/* Text features */
+
+.no-underline {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.blue-text {
+    color: #00b6ee;
+}
+
+#quote {
+    color: #90eebf;
+}
+
+.quote {
+    color: #90eebf;
+}
+
 /* Default text and color */
 
 * {

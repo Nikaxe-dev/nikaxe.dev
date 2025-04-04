@@ -1,7 +1,28 @@
 {
     "files.json": {"type": "file", "purpose": "filemap"},
 
-    "Website Viewer": {"type": "directory", "purpose": "project", "description": "View the files of this website!", "thumbnail": "./documents/images/Misc/websiteV30.png", "index.html": {"type": "file", "purpose": "index"}},
+    "Website Viewer": {
+        "type": "directory",
+        "purpose": "project",
+        "description": "View the files of this website!",
+        "thumbnail": "/documents/images/Misc/paper-icon.png",
+        "index.html": {
+            "type": "file",
+            "purpose": "index"
+        }
+    },
 
-    "Instance2d": {"type": "directory", "purpose": "project", "description": "Javascript game framework designed to be similar to luau with a child-parent relationship between game-objects.", "thumbnail": "/documents/images/Instance2d/Icon.svg", "index.html": {"type": "file", "purpose": "index"}, "thumbnailwidth": "175px"}
+    "Instance2d": {
+        "type": "directory",
+        "purpose": "project",
+        "description": "Javascript game framework designed to be similar to luau with a child-parent relationship between game-objects.",
+        "thumbnail": "/documents/images/Instance2d/Icon.svg",
+
+        "index.html": {
+            "type": "file",
+            "purpose": "index"
+        },
+
+        "thumbnailwidth": "175px"
+    }
 }
