@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="https://nikaxe-dev.github.io/Level-Level-Demolition/content/images/publishing/icons/favicon.png">
+</head>
+<body style="background-color: black;">
+    <h1 style="text-align: center; margin: 25% 0; color: white; font-family: Arial, Helvetica, sans-serif;" id="Load-Game-Text">Loading Embed...</h1>
+    <style>
+        * {
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+        embed {
+            position: absolute;
+        }
+    </style>
+    <embed src="https://nikaxe-dev.github.io/Level-Level-Demolition/game" onload="document.getElementById('Load-Game-Text').style.display = 'none'; setInterval(() => {document.getElementById('embed').width = window.innerWidth; document.getElementById('embed').height = window.innerHeight}, 1)" id="embed">
+</body>
