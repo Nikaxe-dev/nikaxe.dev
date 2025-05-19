@@ -14,5 +14,16 @@
             position: absolute;
         }
     </style>
-    <embed src="https://nikaxe-dev.github.io/Level-Level-Demolition/game" onload="document.getElementById('Load-Game-Text').style.display = 'none'; setInterval(() => {document.getElementById('embed').width = window.innerWidth; document.getElementById('embed').height = window.innerHeight}, 1)" id="embed">
+    <script>
+        const embed = document.createElement("embed")
+        embed.src = "https://nikaxe-dev.github.io/Level-Level-Demolition/game" + window.location.search
+        embed.onload = function() {
+            document.getElementById('Load-Game-Text').style.display = 'none'
+            setInterval(() => {
+                embed.width = window.innerWidth
+                embed.height = window.innerHeight
+            }, 1)
+        }
+        document.body.appendChild(embed)
+    </script>
 </body>
