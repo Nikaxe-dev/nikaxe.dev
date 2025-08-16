@@ -24,5 +24,19 @@
         },
 
         "thumbnailwidth": "175px"
+    },
+
+    "Fling And Fight": {
+        "type": "directory",
+        "purpose": "project",
+        "description": "A Roblox game where the main mechanic is grabbing, similar to Fling Things And People (FTAP). In this game, there are items and tools. Tools, to use. And Items, to spawn.",
+        "thumbnail": "/documents/images/FAF/faficon.png",
+
+        "index.html": {
+            "type": "file",
+            "purpose": "index"
+        },
+
+        "thumbnailwidth": "138px"
     }
 }
