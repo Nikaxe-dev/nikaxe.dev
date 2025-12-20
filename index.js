@@ -1,52 +1,20 @@
-//stylesheets
+function style(href) {
+    const style = document.createElement("link")
+    style.rel = "stylesheet"
+    style.href = href
+    document.head.appendChild(style)
+}
 
-const style = document.createElement("link")
-style.rel = "stylesheet"
-style.href = "/index.css"
-document.head.appendChild(style)
-
-const hidescrollbar = document.createElement("style")
-hidescrollbar.textContent = "body {    overflow: auto; -ms-overflow-style: none; /* IE 11 */ scrollbar-width: none; /* Firefox 64 */}"
-document.head.appendChild(hidescrollbar)
+// Stylesheets
+style("/index.css")
+style("/resources/html/navigation/index.css")
 
 const fonts = document.createElement("style")
 fonts.textContent = "@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');"
 document.head.appendChild(fonts)
 
-//title
-
-var title = document.querySelector("title")
-
-if(!title) {
-    title = document.createElement("title")
-    document.head.appendChild(title)
-
-    if(window.location.pathname == "/" || window.location.pathname == "/home.html") {
-        title.textContent = "nikaxe.is-a.dev - home"
-    } else {
-        title.textContent = `nikaxe.is-a.dev - ${window.location.pathname.slice(1, window.location.pathname.length - 5)}`
-    }
-}
-
-//meta tags
-
-function metatag(name, value) {
-    var tag = document.querySelector(`#og${name.slice(3, name.length)}`)
-    console.log(tag, name, value, `og${name.slice(3, name.length)}`)
-    if(!tag) {tag = document.createElement("meta"); document.head.appendChild(tag)}
-    tag.name = name
-    tag.content = value
-}
-
-metatag("og:title", title.textContent)
-metatag("og:description", "Website for me to share my projects, art, and more.")
-
-//icon
-
-var icon = document.getElementById("icon")
-
-if(!icon) {
-    icon = document.createElement("link")
+if(!document.getElementById("icon")) {
+    const icon = document.createElement("link")
     document.head.appendChild(icon)
     icon.rel = "icon"
     icon.href = "/favicon.ico"
@@ -74,7 +42,7 @@ function onloadednavigation() {
 }
 
 const xml = new XMLHttpRequest
-const url = "/navigation.html"
+const url = "/resources/html/navigation"
 xml.responseType = "document"
 
 xml.onreadystatechange = function() {
@@ -86,28 +54,3 @@ xml.onreadystatechange = function() {
 
 xml.open("GET", url, true)
 xml.send()
-
-addEventListener("load", function() {
-    //back
-
-    if(!(window.location.pathname == "/" || window.location.pathname == "/home/" || window.location.pathname == "/home")) {
-        const back = document.createElement("p")
-        back.textContent = "Back ←←←"
-        back.style.margin = "50px"
-        back.className = "link underline-on-hover"
-
-        back.onclick = function() {
-            history.back()
-        }
-
-        document.body.appendChild(back)
-    }
-})
-
-// fetch('https://api.github.com/repos/Nikaxe-Dev/nikaxe.dev/contents/./')
-//   .then(response => response.json())
-//   .then(data => {
-//     data.forEach(item => {
-//         console.log(item.type, item.name); // Logs each file's name
-//     });
-//   })
