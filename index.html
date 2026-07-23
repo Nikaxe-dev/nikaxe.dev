@@ -2,37 +2,82 @@
 
 <html>
     <head>
-        <title>Nikaxe - Game Dev</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="site-theme.css">
     </head>
 
-    <body style="background-color: rgb(16, 16, 16);">
-        <script src="/index.js"></script>
+    <body>
+        <h1 class="center-text font-mono">NIKAXE</h1>
 
-        <div id="page">
-            <div class="about-me paragraph" style="width: 75%;">
-                <h1 style="margin: 35px;">Hey There! I'm Nikaxe.</h1>
+        <div id="containers">
+            <div class="container" id="about-me-container">
+                <h2>ABOUT ME</h2>
+                <p>
+                    <p class="footnote">(Last updated 7/23/2026)</p>
+                    Hello, World!<br>
+                    My name is nikaxe.<br>
+                    <br>
+                    I am a hobbiest computer programmer & game designer who has worked with Godot, Roblox, HTML, Javascript, C#, and more languages.<br>
+                    <br>
+                    Game development has been my dream for 6(?) years starting in 2020 with simplistic Scratch programming. <br>
+                    <br>
+                    I was born and raised in New Zealand and still live in the north island.<br>
+                    <p class="footnote">(You can contact me at nikaxe.public@gmail.com, although my discord is always open for DMs)</p>
+                </p>
 
-                <pre style="text-wrap: wrap;">
-Hobbiest game developer, web developer, and general programmer.
-I am a small game developer who picked up a hobby at a young age, starting out with just <a href="https://scratch.mit.edu" target="_blank" class="link link-blue underline-on-hover">Scratch</a> for some years, and then
-finally moving to <a href="https://roblox.com" class="link link-blue underline-on-hover" target="_blank">Roblox</a> and Web development.
-                </pre>
-
-<h2>Languages:</h2>
-<a style="color: orange; display: inline;" class="link underline-on-hover" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a>,<br>
-<a style="color: rgb(0, 140, 255); display: inline;" class="link underline-on-hover" href="https://en.wikipedia.org/wiki/TypeScript" target="_blank">Typescript</a>,<br>
-<a style="color: rgb(255, 0, 255); display: inline;" class="link underline-on-hover" href="https://en.wikipedia.org/wiki/Lua" target="_blank">Lua & Luau</a>,<br>
-<span style="display: inline;">A bit of</span> <a style="color: rgb(0, 255, 0); display: inline;" class="link underline-on-hover" href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>,<br>
-<a style="display: inline; color: rgb(30, 210, 180);" class="link underline-on-hover" href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML & CSS.</a>
-
+                <h2>SOCIALS</h2>
+                <div class="socials-container">
+                    <a href="https://youtube.com/@Nikaxe" target="_blank">Youtube</a>
+                    <a href="https://discord.gg/vhpYZGUvXx" target="_blank">Discord</a>
+                    <a href="https://github.com/Nikaxe-dev" target="_blank">GitHub</a>
+                    <a href="https://www.roblox.com/users/307718159/profile" target="_blank">Roblox</a>
+                    <a href="https://steamcommunity.com/id/Nikaxe" target="_blank">Steam</a>
+                    <a href="https://nikaxe.itch.io" target="_blank">Itch Io</a>
+                </div>
             </div>
 
-            <div class="github">
-                <embed class="stat" src="https://github-readme-stats.vercel.app/api?username=Nikaxe-dev&theme=dark">
-                <embed class="stat" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikaxe-dev&layout=compact&theme=dark">
-                <embed class="stat" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikaxe-dev&repo=nikaxe.dev&theme=dark">
-                <embed class="stat" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikaxe-dev&repo=Instance2D&theme=dark">
-                <embed class="stat" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikaxe-dev&repo=scratch&theme=dark">
+            <div class="container" id="projects-container">
+                <h2>MY PROJECTS</h2>
+                <p class="footnote">(Last updated 7/23/2026)</p>
+                <h3>IN DEVELOPMENT:</h3>
+
+                <div class="project-container">
+                    <a class="important-project" href="https://discord.gg/vhpYZGUvXx" target="_blank">Fling And Fight (GODOT) ★</a>
+                    <a href="https://nikaxe.is-a.dev" target="_blank">nikaxe.is-a.dev</a>
+                </div>
+
+                <h3>COMPLETED:</h3>
+                
+                <div class="project-container">
+                    <a class="important-project" href="https://discord.gg/vhpYZGUvXx" target="_blank">Fling And Fight (ROBLOX) (UNPLAYABLE) ★</a>
+                </div>
+
+                <h3>ABANDONED:</h3>
+                <p class="footnote">A lot of these are very early & low quality projects. They are not updated and may contain problematic code.</p>
+                
+                <div class="project-container">
+                    <a href='https://github.com/Nikaxe-dev/ERLScript' target="_blank">ERLScript (2025 Roblox)</a>
+                    <a href='https://github.com/Nikaxe-dev/Rogue' target="_blank">Rogue (2025 Minecraft Java)</a>
+                    <a href='https://github.com/Nikaxe-dev/untitled-game-engine' target="_blank">untitled-game-engine (2026 web)</a>
+                    <a href='https://github.com/Nikaxe-dev/Instance2d' target="_blank">Instance2D (2024 web)</a>
+                    <a href='https://github.com/Nikaxe-dev/Level-Level-Demolition' target="_blank">Level Level Demolition (2025 web)</a>
+                    <a href='https://github.com/Nikaxe-dev/nob.js' target="_blank">nob.js (2024 web)</a>
+                    <a href='https://github.com/Nikaxe-dev/attraction-engine' target="_blank">attraction-engine (2024 web)</a>
+                    <p>Helexo (2024 ROBLOX)</p>
+                    <p>Disaster The Survival (2024 ROBLOX)</p>
+                    <p>2d-engine-serv-client (2026 web)</p>
+                    <p>slp-clone-godot (2026 Godot)</p>
+                    <p>idle-game-like-cookie-clicker (2026 web)</p>
+                    <p>3d-multiplayer-game-engine-thingy (2026 web)</p>
+                    <p>untitled-webgame-grid-engine (2026 web)</p>
+                </div>
             </div>
         </div>
     </body>
