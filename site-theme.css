@@ -1,7 +1,7 @@
 * {
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    font-size: 15px;
+    font-size: 20px;
+    color: rgb(175, 0, 0);
 }
 
 h1 {
@@ -26,6 +26,9 @@ h3 {
 
 body {
     background-color: black;
+    text-align: center;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
@@ -91,7 +94,8 @@ body {
 }
 
 .footnote {
-    font-size: 12px;
+    font-size: 15px;
+    color: rgb(141, 77, 77);
 }
 
 .center-text {

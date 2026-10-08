@@ -1,0 +1,37 @@
+.terminal {
+    text-align: left;
+    width: 650px;
+    height: 500px;
+    margin: 10px auto;
+    padding: 10px;
+
+    background-color: rgb(8, 0, 0);
+    border: solid rgb(54, 0, 0);
+
+    overflow: scroll;
+}
+
+.terminal * {
+    font-family: monospace;
+    font-size: 13px;
+    margin: 0px;
+    color: white;
+}
+
+.terminal a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.terminal a:hover {
+    text-decoration: underline;
+}
+
+.terminal input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    overflow: visible;
+    overflow-wrap: anywhere;
+}
