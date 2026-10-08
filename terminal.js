@@ -24,6 +24,8 @@ const COMMANDS = {
             "info:",
             "   welcome          shows the shell welcome message",
             "   help             gives a list of commands",
+            "   me               some information about me",
+            "   projects         redirects to my repositories",
             "projects:",
             "   fling-and-fight  redirects to the fling and fight github",
             "contact:",
@@ -37,6 +39,24 @@ const COMMANDS = {
 
     "clear": [["clear"]],
 
+    "nikaxe": [
+        ["output", [
+            "------",
+            "Hey there!",
+            "I'm nikaxe, a 14 year old heavily interested in computer science & game development.",
+            "------",
+            "I have experience in web, roblox, and godot development.",
+            "The languages I have most used are typescript, luau, and C#.",
+            "------",
+            "As of the last time this website was updated, I have been working on FaF, which you may find more info on through the faf command.",
+            "------"
+        ]]
+    ],
+
+    "aboutme": "nikaxe",
+    "about": "nikaxe",
+    "me": "nikaxe",
+
     "fling-and-fight": [["redirect", "/projects/fling-and-fight"]],
     "faf": "fling-and-fight",
     "flingandfight": "fling-and-fight",
@@ -47,7 +67,8 @@ const COMMANDS = {
     "email": [["redirect", "mailto:nikaxe.public@gmail.com"]],
     "youtube": [["redirect", "https://youtube.com/@nikaxe"]],
     "github": [["redirect", "https://github.com/Nikaxe-Dev"]],
-    "source": [["redirect", "https://github.com/Nikaxe-Dev/nikaxe.dev"]]
+    "source": [["redirect", "https://github.com/Nikaxe-Dev/nikaxe.dev"]],
+    "projects": [["redirect", "https://github.com/Nikaxe-dev?tab=repositories"]]
 }
 
 const USER_CMD_HEADER = "[visitor@nikaxe.is-a.dev ~]$";
